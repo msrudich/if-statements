@@ -4,8 +4,19 @@
     {
         public static int DoSomething(int i)
         {
-            // TODO Implement the method.
-            throw new NotImplementedException();
+            var result = i;
+
+            if (i < 0 && i >= -5)
+            {
+                result += 5;
+            }
+
+            if (i > 0 && i <= 5)
+            {
+                result -= 5;
+            }
+
+            return result;
         }
     }
 }

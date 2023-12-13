@@ -4,8 +4,19 @@
     {
         public static bool DoSomething(bool b, int i)
         {
-            // TODO Implement the method.
-            throw new NotImplementedException();
+            var result = false;
+
+            if (b && ((i < 0 && (i >= -4 || i < -8)) || (i > 0 && (i <= 4 || i > 8))))
+            {
+                result = true;
+            }
+
+            if (!b && i != 0 && !((i < -4 && i >= -8) || (i >= 4 && i < 8)))
+            {
+                result = true;
+            }
+
+            return result;
         }
     }
 }

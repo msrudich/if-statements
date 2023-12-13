@@ -4,8 +4,58 @@
     {
         public static int DoSomething(bool b, int i)
         {
-            // TODO Implement the method.
-            throw new NotImplementedException();
+            if (b)
+            {
+                if (i < -8)
+                {
+                    return 5 + i;
+                }
+
+                if (i >= -8 && i < -4)
+                {
+                    return i;
+                }
+
+                if (i >= -4 && i < 0)
+                {
+                    return 5 + i;
+                }
+
+                if (i == 0)
+                {
+                    return 10;
+                }
+
+                if (i > 0 && i <= 3)
+                {
+                    return i - 5;
+                }
+
+                if (i > 3)
+                {
+                    return -i;
+                }
+            }
+
+            if (!b)
+            {
+                if (i <= -5)
+                {
+                    return -i;
+                }
+
+                if (i > -5 && i <= 5)
+                {
+                    return 10 - i;
+                }
+
+                if (i > 5)
+                {
+                    return -i;
+                }
+            }
+
+            return 1000000000;
         }
     }
 }
