@@ -9,27 +9,22 @@
                 return i * i;
             }
 
-            if (i >= -8 && i < -5)
+            if (i < -5)
             {
                 return i;
             }
 
-            if (i >= -5 && i < 5)
+            if (i < 5)
             {
                 return (i * i) - i;
             }
 
-            if (i >= 5 && i < 10)
+            if (i < 10)
             {
                 return i;
             }
 
-            if (i >= 10)
-            {
-                return 0 - (i * i);
-            }
-
-            return 1000000000;
+            return 0 - (i * i);
         }
     }
 }
